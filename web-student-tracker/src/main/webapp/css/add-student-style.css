@@ -1,43 +1,151 @@
+/* General Form Styling */
 form {
-	margin-top: 10px;
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
 }
 
+/* Label Styling */
 label {
-	font-size: 16px; 
-	width: 100px; 
-	display: block; 
-	text-align: right;
-	margin-right: 10px;
-	margin-top: 8px;
-	margin-bottom: 8px;
+    font-size: 16px;
+    width: 120px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
 }
 
+/* Input Styling */
 input {
-	width: 250px;
-	border: 1px solid #666; 
-	border-radius: 5px; 
-	padding: 4px; 
-	font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
+input:focus {
+    border-color: #0775d3;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(7, 117, 211, 0.5);
+}
+
+/* Save Button Styling */
 .save {
-	font-weight: bold;
-	width: 130px; 
-	padding: 5px 10px; 
-	margin-top: 30px;
-	background: #cccccc;
+    font-weight: bold;
+    width: 150px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    background: #0775d3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-table {   
-	border-style:none;
-	width:50%;
+.save:hover {
+    background: #065d9f;
+    transform: translateY(-2px);
 }
 
-tr:nth-child(even) {background: #FFFFFF}
-tr:nth-child(odd) {background: #FFFFFF}
-
-tr {
-	border-style:none;
-	text-align:left;	
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Verdana', Arial, Helvetica, sans-serif;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
 }
-	
+
+th {
+    background-color: #0775d3;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: normal;
+    border-top: 1px solid #ddd;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+/* Wrapper and Header */
+#wrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#header {
+    width: 80%;
+    background-color: #0775d3;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+#header h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/* Container for content */
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+#container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.add-student-button {
+    border: 1px solid #0775d3;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #f1f1f1;
+    color: #0775d3;
+    width: 180px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.add-student-button:hover {
+    background: #0775d3;
+    color: white;
+    transform: translateY(-2px);
+}
