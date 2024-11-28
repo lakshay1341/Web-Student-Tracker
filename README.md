@@ -36,4 +36,3 @@ Feel free to fork this repository and submit pull requests if you have any sugge
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
-```
